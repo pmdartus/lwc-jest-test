@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+
+<ruleset name="Default ruleset used by the CodeClimate Engine for Salesforce.com Apex"
+	     xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+    	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    	 xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+
+	<description>
+		Over Ridden ruleset used by vscode-apex-pmd
+	</description>
+	<exclude-pattern>.*/DEVC*.*</exclude-pattern>	
+	<rule ref="category/apex/codestyle.xml/ClassNamingConventions" message="ClassNamingConventions to be taken care">
+		<priority>3</priority>
+		
+		<properties>
+			<property name="testClassPattern" value="[A-Z][a-zA-Z0-9_]*" />
+			<property name="abstractClassPattern" value="[A-Z][a-zA-Z0-9_]*" />
+			<property name="classPattern" value="[A-Z][a-zA-Z0-9_]*" />	
+			<property name="interfacePattern" value="[A-Z][a-zA-Z0-9_]*" />
+			<property name="enumPattern" value="[A-Z][a-zA-Z0-9_]*" />
+		</properties>
+	</rule>
+	
+	<rule ref="category/apex/codestyle.xml/FieldNamingConventions" message="FieldNamingConventions to be taken care">
+			<priority>3</priority>
+    <properties>
+        <property name="enumConstantPattern" value="[A-Z][A-Z0-9_]*" />
+        <property name="constantPattern" value="[A-Z][A-Z0-9_]*" />
+        <property name="finalPattern" value="[a-z][a-zA-Z0-9]*" />
+        <property name="staticPattern" value="[a-z][a-zA-Z0-9]*" />
+        <property name="instancePattern" value="[a-z][a-zA-Z0-9]*" />
+    </properties>
+	</rule>
+
+
+	<rule ref="category/apex/codestyle.xml/FormalParameterNamingConventions" message="FormalParameterNamingConventions to be taken care">
+	<priority>3</priority>
+		<properties>
+			<property name="finalMethodParameterPattern" value="[a-z][a-zA-Z0-9]*" />
+			<property name="methodParameterPattern" value="[a-z][a-zA-Z0-9]*" />
+		</properties>
+	</rule>
+	
+	
+	<rule ref="category/apex/codestyle.xml/LocalVariableNamingConventions" message="LocalVariableNamingConventions to be taken care">
+	<priority>1</priority>
+		<properties>
+			<property name="finalLocalPattern" value="[a-z][a-zA-Z0-9]*" />
+        <property name="localPattern" value="[a-z][a-zA-Z0-9]*" />
+		</properties>
+	</rule>
+	
+	
+	<rule ref="category/apex/codestyle.xml/PropertyNamingConventions" message="PropertyNamingConventions to be taken care">
+	<priority>3</priority>
+		<properties>
+			
+			<property name="staticPattern" value="[a-z][a-zA-Z0-9]*" />
+			<property name="instancePattern" value="[a-z][a-zA-Z0-9]*" />
+		</properties>
+	</rule>
+
+	<rule ref="rulesets/apex/style.xml/ClassNamingConventions" message="Class names should begin with an uppercase character">
+		<priority>1</priority>
+
+        <properties>	       
+	       	<property name="cc_categories" value="Style"/>
+	       	<property name="cc_remediation_points_multiplier" value="5"/>
+        	<property name="cc_block_highlighting" value="false"/>
+       	</properties>
+	</rule>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</ruleset>

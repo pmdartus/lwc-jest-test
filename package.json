@@ -1,0 +1,18 @@
+{
+  "name": "myf5",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@salesforce/eslint-config-lwc": "^0.7.0",
+    "@salesforce/sfdx-lwc-jest": "^0.7.1",
+    "eslint": "^6.8.0",
+    "prettier": "^1.18.2"
+  },
+  "dependencies": {
+    "npm": "^6.9.0"
+  },
+  "scripts": {
+    "test:unit": "sfdx-lwc-jest",
+    "test:unit:debug": "sfdx-lwc-jest --debug",
+    "test:unit:watch": "sfdx-lwc-jest --watch"
+  }
+}
